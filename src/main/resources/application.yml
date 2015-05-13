@@ -1,0 +1,24 @@
+spring:
+  # FreeMarker配置
+  freemarker:
+    enabled: true
+    checkTemplateLocation : false
+    cache: false
+    setting :
+      template_update_delay : 0
+      default_encoding : UTF-8
+    suffix: .ftl
+
+server:
+  port: 8080
+
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+        http: INFO
+        context: INFO
+        beans: INFO
+        core: INFO
+      devzen: DEBUG
